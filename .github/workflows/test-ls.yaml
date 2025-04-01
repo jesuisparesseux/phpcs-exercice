@@ -6,13 +6,9 @@ jobs:
     steps:
       - name: Checkout du code
         uses: actions/checkout@v2
-      - name: Afficher les fichiers
-        run: ls -la
       - name: Installer PHPCS
         run: |
-          curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
-          chmod +x phpcs.phar
-      - name: Afficher la configuration de PHPCS
-        run: ./phpcs.phar --config-show
+          sudo apt-get update
+          sudo apt-get install php-codesniffer
       - name: Vérifier le code avec PHPCS
-        run: ./phpcs.phar --config-file=phpcs.xml || true
+        run: phpcs src/
