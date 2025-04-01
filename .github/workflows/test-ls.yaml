@@ -13,4 +13,4 @@ jobs:
           curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
           chmod +x phpcs.phar
       - name: Vérifier le code avec PHPCS
-        run: ./phpcs.phar src --standard=PEAR || true
+        run: ./phpcs.phar --config-file=phpcs.xml || true
