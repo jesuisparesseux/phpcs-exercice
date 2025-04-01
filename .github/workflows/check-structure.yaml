@@ -1,0 +1,13 @@
+name: Vérification arborescence
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  check-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v2
+      - name: Exécuter le script de vérification
+        run: /bin/bash scripts/script.sh

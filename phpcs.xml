@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
 <ruleset name="Custom">
-    <description>Custom ruleset for phpcs-exercice</description>
+    <description>Custom ruleset pour phpcs-exercice</description>
+    <!-- Dossier à analyser -->
     <file>src/</file>
-    <rule ref="PEAR">
-        <exclude name="PEAR.Commenting.FileComment.MissingVersion"/>
-    </rule>
+    <!-- Norme à utiliser -->
+    <rule ref="PEAR"/>
+    <!-- Liste des extensions à vérifier -->
+    <arg name="extensions" value="php"/>
+<arg name="extensions" value="php,html"/>
 </ruleset>
