@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset name="Custom">
+    <description>Custom ruleset for phpcs-exercice</description>
+    <file>src/</file>
+    <rule ref="PEAR">
+        <exclude name="PEAR.Commenting.FileComment.MissingVersion"/>
+    </rule>
+</ruleset>
