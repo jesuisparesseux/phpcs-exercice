@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Checkout du code
         uses: actions/checkout@v2
+      - name: Afficher les fichiers
+        run: ls -la
       - name: Installer PHPCS
         run: |
           curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
