@@ -1,8 +1,14 @@
-name: Liste des fichiers
+name: Qualité de code
 on: [push]
 jobs:
-  list-files:
+  phpcs:
     runs-on: ubuntu-latest
     steps:
-      - name: Afficher les fichiers
-        run: ls -la
+      - name: Checkout du code
+        uses: actions/checkout@v2
+      - name: Installer PHPCS
+        run: |
+          curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+          chmod +x phpcs.phar
+      - name: Vérifier le code avec PHPCS
+        run: ./phpcs.phar src --standard=PEAR
