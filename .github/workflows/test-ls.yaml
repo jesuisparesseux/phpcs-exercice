@@ -1,0 +1,8 @@
+name: Liste des fichiers
+on: [push]
+jobs:
+  list-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher les fichiers
+        run: ls -la
