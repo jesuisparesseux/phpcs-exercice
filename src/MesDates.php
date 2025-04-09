@@ -2,7 +2,9 @@
 
 /**
  * MesDates.php - A utility class for date manipulation.
- *
+ * 
+ * PHP version 8.4.5
+ * 
  * This file provides a class to handle date-related utilities.
  *
  * @category Date
@@ -10,7 +12,6 @@
  * @author   jesuisparesseux <deranfangnachdemende@gmail.com>
  * @license  MIT https://opensource.org/licenses/MIT
  * @link     https://github.com/jesuisparesseux/phpcs-exercice
- * @requires PHP 8.4
  */
 namespace Jesuisparesseux\PhpcsExercice;
 
