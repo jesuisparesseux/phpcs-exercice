@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4  # Mis à jour de v2 à v4 pour cohérence
+      uses: actions/checkout@v4
 
     - name: Set up PHP
       uses: shivammathur/setup-php@v2
@@ -26,4 +26,4 @@ jobs:
       run: composer install --prefer-dist --no-progress
 
     - name: Run PHPCS
-      run: vendor/bin/phpcs/ tests/ src/
+      run: vendor/bin/phpcs tests/ src/
