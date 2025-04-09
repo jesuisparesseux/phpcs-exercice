@@ -14,12 +14,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4  # Mis à jour de v2 à v4 pour cohérence
 
     - name: Set up PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.4'  # Changé de 8.0 à 8.4
+        php-version: '8.4'
         extensions: xdebug
 
     - name: Install dependencies
@@ -32,7 +32,7 @@ jobs:
       run: vendor/bin/phpunit --coverage-html coverage
 
     - name: Upload coverage report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4  # Changé de v3 à v4
       with:
         name: coverage-report
         path: coverage/
