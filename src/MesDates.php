@@ -10,8 +10,8 @@
  * @author   jesuisparesseux <deranfangnachdemende@gmail.com>
  * @license  MIT https://opensource.org/licenses/MIT
  * @link     https://github.com/jesuisparesseux/phpcs-exercice
+ * @requires PHP 8.4
  */
-
 namespace Jesuisparesseux\PhpcsExercice;
 
 /**
