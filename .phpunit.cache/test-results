@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Jesuisparesseux\\PhpcsExercice\\Tests\\MesDatesTest::testDemainReturnsJson":5,"Jesuisparesseux\\PhpcsExercice\\Tests\\MesDatesTest::testDemainReturnsTomorrowDate":5},"times":{"Jesuisparesseux\\PhpcsExercice\\Tests\\MesDatesTest::testDemainReturnsJson":0.003,"Jesuisparesseux\\PhpcsExercice\\Tests\\MesDatesTest::testDemainReturnsTomorrowDate":0}}

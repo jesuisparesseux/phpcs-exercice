@@ -2,7 +2,8 @@
     "name": "jesuisparesseux/phpcs-exercice",
     "description": "Exercice PHPCS",
     "require-dev": {
-        "squizlabs/php_codesniffer": "^3.0"
+        "squizlabs/php_codesniffer": "^3.0",
+        "phpunit/phpunit": "^12.1"
     },
     "require": {
         "php": ">=8.0"
