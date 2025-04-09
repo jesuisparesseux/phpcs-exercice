@@ -5,7 +5,8 @@
     <file>src/</file>
     <!-- Norme à utiliser -->
     <rule ref="PEAR"/>
+    <!-- Spécifie la version PHP -->
+    <config name="testVersion" value="8.4-"/>
     <!-- Liste des extensions à vérifier -->
-    <arg name="extensions" value="php"/>
-<arg name="extensions" value="php,html"/>
+    <arg name="extensions" value="php,html"/>
 </ruleset>
