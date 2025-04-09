@@ -1,41 +1,60 @@
 <?php
 
 /**
- * MesDates.php - A utility class for date manipulation.
- * 
+ * MesDatesTest.php - Unit tests for the MesDates class.
+ *
  * PHP version 8.4.5
  * 
- * This file provides a class to handle date-related utilities.
+ * This file contains unit tests to verify the functionality of the MesDates class.
  *
- * @category Date
+ * @category Tests
  * @package  PhpcsExercice
  * @author   jesuisparesseux <deranfangnachdemende@gmail.com>
  * @license  MIT https://opensource.org/licenses/MIT
  * @link     https://github.com/jesuisparesseux/phpcs-exercice
+ * @requires PHP 8.4
  */
-namespace Jesuisparesseux\PhpcsExercice;
+namespace Jesuisparesseux\PhpcsExercice\Tests;
+
+use Jesuisparesseux\PhpcsExercice\MesDates;
+use PHPUnit\Framework\TestCase;
 
 /**
- * Class MesDates
+ * Class MesDatesTest
  *
- * Provides utilities for date manipulation.
+ * Unit tests for the MesDates class.
  *
- * @category Date
+ * @category Tests
  * @package  PhpcsExercice
  * @author   jesuisparesseux <deranfangnachdemende@gmail.com>
  * @license  MIT https://opensource.org/licenses/MIT
  * @link     https://github.com/jesuisparesseux/phpcs-exercice
  */
-class MesDates
+class MesDatesTest extends TestCase
 {
     /**
-     * Returns tomorrow's date as a JSON object.
+     * Tests that demain() returns a valid JSON string.
      *
-     * @return string JSON encoded string with tomorrow's date
+     * @return void
      */
-    public function demain(): string
+    public function testDemainReturnsJson()
     {
+        $mesDates = new MesDates();
+        $result = $mesDates->demain();
+        $this->assertJson($result);
+    }
+
+    /**
+     * Tests that demain() returns tomorrow's date in JSON format.
+     *
+     * @return void
+     */
+    public function testDemainReturnsTomorrowDate()
+    {
+        $mesDates = new MesDates();
+        $result = $mesDates->demain();
+        $data = json_decode($result, true);
         $tomorrow = date('d-m-Y', strtotime('+1 day'));
-        return json_encode(['demain' => $tomorrow]);
+        $this->assertEquals($tomorrow, $data['demain']);
     }
 }
