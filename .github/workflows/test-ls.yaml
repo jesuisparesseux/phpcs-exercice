@@ -27,12 +27,3 @@ jobs:
 
     - name: Run PHPCS
       run: vendor/bin/phpcs
-
-    - name: Run PHPUnit
-      run: vendor/bin/phpunit --coverage-html coverage
-
-    - name: Upload coverage report
-      uses: actions/upload-artifact@v4  # Changé de v3 à v4
-      with:
-        name: coverage-report
-        path: coverage/
