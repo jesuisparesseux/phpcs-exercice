@@ -5,12 +5,12 @@
  *
  * This file provides a class to handle date-related utilities.
  *
- * @category   Date
- * @package    PhpcsExercice
- * @author     jesuisparesseux <deranfangnachdemende@gmail.com>
- * @license    MIT https://opensource.org/licenses/MIT
- * @link       https://github.com/jesuisparesseux/phpcs-exercice
- * @phpversion 8.4
+ * @category Date
+ * @package  PhpcsExercice
+ * @author   jesuisparesseux <deranfangnachdemende@gmail.com>
+ * @license  MIT https://opensource.org/licenses/MIT
+ * @link     https://github.com/jesuisparesseux/phpcs-exercice
+ * @requires PHP 8.4
  */
 namespace Jesuisparesseux\PhpcsExercice;
 
@@ -19,11 +19,11 @@ namespace Jesuisparesseux\PhpcsExercice;
  *
  * Provides utilities for date manipulation.
  *
- * @category   Date
- * @package    PhpcsExercice
- * @author     jesuisparesseux <deranfangnachdemende@gmail.com>
- * @license    MIT https://opensource.org/licenses/MIT
- * @link       https://github.com/jesuisparesseux/phpcs-exercice
+ * @category Date
+ * @package  PhpcsExercice
+ * @author   jesuisparesseux <deranfangnachdemende@gmail.com>
+ * @license  MIT https://opensource.org/licenses/MIT
+ * @link     https://github.com/jesuisparesseux/phpcs-exercice
  */
 class MesDates
 {
